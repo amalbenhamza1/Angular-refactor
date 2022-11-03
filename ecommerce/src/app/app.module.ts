@@ -15,6 +15,9 @@ import { RegisterComponent } from './components/pages/register/register.componen
 import { AccountComponent } from './components/pages/account/account.component';
 import { DropdownComponent } from './components/pages/dropdown/dropdown.component';
 import { MainLayoutComponent } from './components/pages/main-layout/main-layout.component';
+import { HttpClientModule } from '@angular/common/http';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { FormsModule  } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -34,9 +37,15 @@ import { MainLayoutComponent } from './components/pages/main-layout/main-layout.
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    Ng2SearchPipeModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
+
 export class AppModule { }
