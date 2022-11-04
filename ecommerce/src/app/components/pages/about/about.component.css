@@ -1,0 +1,28 @@
+main .pg-header {
+    padding: 60px 0;
+    background: #e6e6e6;
+}
+main .pg-header h1 {
+    color: #333;
+    font-weight: 600;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.about h2 {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    position: relative;
+    margin-bottom: 20px;
+}
+h2::after {
+    position: absolute;
+    content: '';
+    width: 50px;
+    bottom: -6px;
+    height: 2px;
+    background-color: #666;
+    left: 0;
+}

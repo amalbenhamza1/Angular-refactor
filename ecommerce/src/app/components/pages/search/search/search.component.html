@@ -1,0 +1,10 @@
+<form class="wrap">
+  <div class="search">
+    <h3>Search country by name filter : </h3>
+    <input class="searchTerm" type="text" name="searchTerm" 
+      placeholder="search product"
+      [(ngModel)]="searchText" (input)="search(searchText)" />
+  </div>
+<p *ngFor="let product of alldata | searchFilter: searchText index as i "> {{product.id}} </p>
+ 
+</form>

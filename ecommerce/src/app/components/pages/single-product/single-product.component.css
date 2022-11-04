@@ -1,0 +1,53 @@
+main .pg-header {
+    padding: 60px 0;
+    background: #e6e6e6;
+}
+.mat-typography h1 {
+    font: 400 24px/32px Roboto, "Helvetica Neue", sans-serif;
+    letter-spacing: normal;
+    margin: 0 0 16px;
+}
+main .content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+}
+.h2, h2 {
+    font-size: calc(1.325rem + .9vw);
+}
+
+main {
+    background-color: #fff;
+}
+.row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+}
+main .pg-header h1 {
+    color: #333;
+    font-weight: 600;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.breadcrumb-item.active {
+    color: var(--bs-breadcrumb-item-active-color);
+}
+.breadcrumb a {
+    color: #000;
+}
+
+.breadcrumb.justify-content-end {
+    justify-content: flex-start !important;
+}

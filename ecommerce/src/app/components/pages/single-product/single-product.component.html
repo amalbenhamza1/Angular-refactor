@@ -1,0 +1,46 @@
+<main>
+  <div class="pg-header">
+    <div class="container">
+      <div class="row align-items-center">
+        
+          <div class="col-lg-7">
+          <h1 *ngFor="let product of newdata">{{product.name}}</h1>
+        </div> 
+        
+        <div class="col-lg-5">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-end">
+               <li class="breadcrumb-item">Home</li> 
+              <li class="breadcrumb-item">Products</li>
+                <li class="breadcrumb-item active" aria-current="page" *ngFor="let product of newdata">{{product.name}}</li> 
+              
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container content">
+    <div class="row">
+    
+<div class="col-lg-5" key = {i}>
+<img *ngFor="let product of newdata" src={{product.img}} alt="" class="img-fluid" />
+</div>
+      <div class="col-lg-7" key = {i}>
+        <h2 *ngFor="let product of newdata">{{product.name}}</h2>
+        <p class="price" *ngFor="let product of newdata"><strong>{{product.price}}$</strong></p>
+        <p *ngFor="let product of newdata">{{product.description}}</p>
+       
+        <br />
+        <br />
+        <br />
+        <button class="btn btn-primary btn-sm" [routerLink]="['']">BACK</button> &nbsp; 
+        <button class="btn btn-primary btn-sm" [routerLink]="['/products']">NAVIGATE TO PRODUCTS</button> &nbsp;
+        <button class="btn btn-primary btn-sm" [routerLink]="['/login']"> BUY </button> &nbsp; 
+        
+         <!-- to="/products" class="btn btn-primary btn-sm">PRODUCTS -->
+      </div> 
+  
+      
+    </div>
+  </div>
