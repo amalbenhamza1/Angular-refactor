@@ -1,1 +1,21 @@
-<p>register works!</p>
+
+ <div class="signup">
+    <div class="col-lg-4 col-md-6 col-sm-8 mx-auto">
+       
+       <h1>Register</h1>
+       <form #user="ngForm" class="form-group"  (ngSubmit)="signUP(user)">
+          
+          <input type="text" class="form-control" placeholder="username"  name="username" #username="ngModel" ngModel  required>
+          <input type="email" class="form-control" placeholder="Email"   name="email" #email="ngModel" ngModel required>
+          <input type="password" class="form-control" placeholder="Password" name="password" #password="ngModel" ngModel  minlength="8" required>
+          <input type="password" class="form-control" placeholder="confirm password" name="password" #password="ngModel" ngModel  minlength="8" required>
+          <input type="submit" class="btn btn-primary" value="register">
+          <p>Already have an account? <a href="/">Sign in here</a>    
+          </p>
+          <div class="alert alert-danger" role="alert" *ngIf="message">
+            {{ message }}
+           </div>
+       </form>
+    </div>
+    <div></div>
+ </div>

@@ -88,4 +88,6 @@ import { SearchFilterPipe } from './search-filter.pipe';
   providers: [],
   bootstrap: [AppComponent]
 })
+
+
 export class AppModule { }
