@@ -1,1 +1,28 @@
-<p>products works!</p>
+<main>
+  <div class='pg-header'>
+    <div class='container'>
+
+      <div class='row align-item-center'></div>
+      <nav>
+        <ol class='breadcrumb justify-content-end'>
+          <li class='breadcrumb-item active'>Products</li>
+        </ol>
+      </nav>
+        <h1>Products</h1>
+    </div>
+    <div class='col-lg-5'>
+
+    </div>
+  </div>
+  <ul  class="products">
+    <ng-container *ngFor="let singleProduct of products; let i=index">
+        <app-single-product class="w-1/2 p-5 text-center">
+          <strong>{{singleProduct.id}}</strong>
+          <strong>{{singleProduct.name}}</strong>
+          <strong>{{singleProduct.description}}</strong>
+          <strong>{{singleProduct.price}}</strong>
+          <routerLink class='btn btn-primary btn-sm' to={`/products/${singleProduct.id}`}>DETAILS &#8594;</routerLink>
+        </app-single-product>
+    </ng-container>
+</ul>
+</main>
