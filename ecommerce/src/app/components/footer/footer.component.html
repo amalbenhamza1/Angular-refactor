@@ -1,1 +1,25 @@
-<p>footer works!</p>
+
+<footer class ='footer'>
+    <div class ='container'>
+
+      <nav class ='d-flex justify-content-center'>
+          <div [routerLink]="['']"  
+ 
+          >Home</div>
+      
+          <div [routerLink]="['about']"
+           
+          >About</div>
+          <div [routerLink]="['products']"
+           
+          >Products</div>
+          <div [routerLink]="['posts']"
+           
+     >Posts</div>
+     </nav>
+
+      <div class ="copyrights">
+        &copy; 2022 <p [routerLink]="['']">Echrini</p>  - All Rights Reserved.
+      </div>
+    </div>
+  </footer>
